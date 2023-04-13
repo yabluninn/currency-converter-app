@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  .container {
+    width: 95%;
+  }
+  .color-change-container {
+    width: 95%;
+  }
+  .app-images {
+    display: none;
+  }
+  .amount-input-block {
+    width: 85%;
+  }
+  .select-blocks {
+    width: 85%;
+  }
+  .convert-btn {
+    width: 85%;
+  }
+}

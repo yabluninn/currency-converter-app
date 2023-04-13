@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="lib/css/normalize.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <p class="header-label">Currency converter</p>
+        <p class="header-sublabel">
+          Use this tool to get actual currency informtaion!
+        </p>
+        <div class="amount-input-block">
+          <p class="input-label">Enter amount</p>
+          <div class="amount-input-box">
+            <img
+              src="https://em-content.zobj.net/thumbs/240/apple/354/money-bag_1f4b0.png"
+              alt=""
+            />
+            <input type="text" class="amount-input" placeholder="Amount" />
+          </div>
+        </div>
+        <div class="select-blocks">
+          <div class="select-block">
+            <p class="select-label">From</p>
+            <div class="select-box">
+              <img
+                src="https://flagsapi.com/UA/shiny/64.png"
+                class="from-img-flag"
+              />
+              <select class="from-select"></select>
+            </div>
+          </div>
+          <button class="swap-btn">
+            <i class="fa-solid fa-right-left"></i>
+          </button>
+          <div class="select-block">
+            <p class="select-label">To</p>
+            <div class="select-box">
+              <img
+                src="https://flagsapi.com/US/shiny/64.png"
+                class="from-img-flag"
+              />
+              <select class="to-select"></select>
+            </div>
+          </div>
+        </div>
+        <p class="exchange-result"></p>
+        <button class="convert-btn">Exchange</button>
+      </div>
+      <div class="color-change-container">
+        <p class="color-change-header-label">Change theme color</p>
+        <div class="color-change-block">
+          <img
+            src="https://em-content.zobj.net/thumbs/240/apple/354/artist-palette_1f3a8.png"
+            alt=""
+            class="color-change-icon"
+          />
+          <div class="color-change-colors-container">
+            <button class="color-change-btn" id="default-theme-color"></button>
+            <button class="color-change-btn" id="green-theme-color"></button>
+            <button class="color-change-btn" id="red-theme-color"></button>
+            <button class="color-change-btn" id="orange-theme-color"></button>
+            <button class="color-change-btn" id="blue-theme-color"></button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://em-content.zobj.net/thumbs/240/apple/354/money-mouth-face_1f911.png"
+        alt=""
+        class="app-images app-img-one"
+      />
+      <img
+        src="https://em-content.zobj.net/thumbs/240/apple/354/money-with-wings_1f4b8.png"
+        alt=""
+        class="app-images app-img-two"
+      />
+    </div>
+    <script
+      src="https://kit.fontawesome.com/639cd4a693.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/countries.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
